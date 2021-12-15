@@ -13,6 +13,13 @@ nav ul li{
 
 li{
     padding: 25px;
+    font-size: 20px;
+    transition: font-size 2s, transform 2s;
+}
+
+li:hover{
+    font-size: 25px;
+    color: rgb(87, 95, 102);
 }
 
 .menu{
@@ -25,8 +32,20 @@ li{
     grid-template-rows: repeat(1, 2fr);
     align-items: center;
     justify-items: center;
-    background-color: #7F8080;
+    background-image: linear-gradient(to top, #7F8080, #ffffff) ;
+    background-attachment: fixed;
 
+}
+
+.menu_logo{
+    transition-duration: 1s;
+    transition-delay: now;
+}
+
+.menu_logo:hover{
+    transform: rotate(360deg);
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
 img{
@@ -96,4 +115,13 @@ main{
     background-color: #7F8080;
 }
 
+i{
+    font-size: 15px;
+    transition: all 0.4s;
+}
+
+i:hover{
+    font-size: 25px;
+    color: #554a4a;
+}
 /* fin de main */
