@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* navegacion */
+
+
+nav ul li{
+    display: inline;
+}
+
+li{
+    padding: 25px;
+}
+
+.menu{
+    height: 80px;
+    display: grid;
+    grid-template-areas: 
+        "logo nav icon"
+    ;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: repeat(1, 2fr);
+    align-items: center;
+    justify-items: center;
+    background-color: #7F8080;
+
+}
+
+img{
+    grid-area: logo;
+    height: 80px;
+    width: 120px;
+}
+
+.menu__iconos{
+    height: 80px;
+    width: 80px;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+
+/* fin de navegacion */
+
+/* main */
+
+main{
+    display: grid;
+    grid-template-areas: 
+        "imagen imagen seccion1"
+        "imagen imagen seccion2"
+        "imagen imagen nav"
+    ;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 2fr);
+}
+
+.principal{
+    grid-area: imagen;
+    height: 600px;
+    width: 780px;
+}
+
+.tecnologia{
+    grid-area: seccion1;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 30px;
+    color: #ffffff;
+}
+
+.parrafo{
+    grid-area: seccion2;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 30px;
+}
+
+.iconos{
+    grid-area: nav;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: #7F8080;
+}
+
+/* fin de main */
